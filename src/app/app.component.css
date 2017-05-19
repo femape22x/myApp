@@ -1,0 +1,18 @@
+h2 {
+    color: #428BCA;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('lib/ubuntu/Ubuntu-B.ttf') format('truetype');
+}
+
+button {
+    width: 150px;
+}
+
+section {
+    background-color: #e5e5e5;
+}

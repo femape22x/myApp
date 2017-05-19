@@ -1,0 +1,74 @@
+<section>
+  <div class="container">
+    <div class="container">
+      <h2>
+        {{title}}
+      </h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-4">
+          <form>
+            <div class="row">
+
+              <div class="col-md-12">
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="nombre">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" 
+                    placeholder="Apellido" [(ngModel)]="contacto.nombre" required autofocus />
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="apellido">Apellido</label>
+                  <input type="text" class="form-control" id="apellido" name="apellido" 
+                    placeholder="Apellido" [(ngModel)]="contacto.apellido" required />
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="identificacion">Identificación</label>
+                  <input type="text" class="form-control" id="identificacion" name="identificacion" 
+                    placeholder="Identificación" [(ngModel)]="contacto.identificacion" required />
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="direccion">Dirección</label>
+                  <input type="text" class="form-control" id="direccion" name="direccion" 
+                    placeholder="Introdusca su dirección" [(ngModel)]="contacto.direccion" required />
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="email">Correo Electronico</label>
+                  <input type="email" class="form-control" id="email" name="email" 
+                    placeholder="Email" [(ngModel)]="contacto.correo" />
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="celular">Celular</label>
+                  <input type="text" class="form-control" id="celular" name="celular" 
+                    placeholder="Celular" [(ngModel)]="contacto.celular" />
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-group col-md-6">
+                  <button type="submit" class="btn btn-success" (click)="save(contacto)">Guardar</button>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
